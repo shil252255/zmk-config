@@ -18,7 +18,5 @@
 #
 ---
 include:
-  - board: seeeduino_xiao_ble
-    shield: corne_left
-  - board: seeeduino_xiao_ble
-    shield: corne_right
+  - board: corneish_zen_v2_left
+  - board: corneish_zen_v2_right
