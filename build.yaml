@@ -18,5 +18,7 @@
 #
 ---
 include:
-  - board: seeeduino_xiao_ble
-    shield: two_percent_milk
+  - board: nrf52840dk_nrf52840
+    shield: corne_left
+  - board: nrf52840dk_nrf52840
+    shield: corne_right
