@@ -18,5 +18,5 @@
 #
 ---
 include:
-  - board: corneish_zen_v2_left
-  - board: corneish_zen_v2_right
+  - board: seeeduino_xiao_ble
+    shield: two_percent_milk
