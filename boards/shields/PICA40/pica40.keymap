@@ -42,7 +42,7 @@
             bindings
                 = <&macro_press &kp LALT>
                 , <&macro_tap &kp LSHFT>
-                , <&macro_press &kp LALT>
+                , <&macro_release &kp LALT>
                 ;
         }
     };
