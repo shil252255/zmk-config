@@ -25,42 +25,6 @@
 };
 
 /{
-    behaviors {
-        hsl: homerow_shift_l {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            require-prior-idle-ms = <30>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-        hsr: homerow_shift_r {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            require-prior-idle-ms = <30>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
-
-
-    combos {
-            compatible = "zmk,combos";
-            combo_caps_word {
-                timeout-ms = <50>;
-                key-positions = <14 17>;
-                bindings = <&caps_word>;
-                layers = <0>;
-            };
-        };
-
-
-
-
     macros {
         nvd: next_virtual_desctop {
             compatible = "zmk,behavior-macro";
@@ -110,7 +74,7 @@
         default_layer { 
             bindings = <
                         &kp Q       &kp W       &kp E           &kp R               &kp T                &kp Y       &kp U       &kp I       &kp O       &kp P 
-            &kp TAB   &kp A       &kp S       &kp D           &hsl LSHFT F        &kp G                &kp H      &hsr RSHFT J       &kp K       &kp L       &kp SEMI    &kp SQT
+            &kp TAB   &kp A       &kp S       &kp D           &kp F        &kp G                &kp H      &kp J       &kp K       &kp L       &kp SEMI    &kp SQT
             &kp LCTRL   &kp Z       &kp X       &kp C           &kp V               &kp B                &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp ESC 
                                                 &lt 1 ESC       &tog FUNC           &mt LALT ENTER            &kp SPACE   &lt NUM BSPC    &kp RALT                    
                         >;

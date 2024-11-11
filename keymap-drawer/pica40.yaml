@@ -14,10 +14,10 @@ layers:
   - A
   - S
   - D
-  - {t: F, h: LSHFT}
+  - F
   - G
   - H
-  - {t: J, h: RSHFT}
+  - J
   - K
   - L
   - ;
@@ -128,7 +128,3 @@ layers:
     '&RIGHT', '&alt_tab', N, M, ',', ., /, ESC, LGUI, nav, SPACE, ENTER, BSPC, RALT]
   sys: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
     ENTER, BSPC, RALT]
-combos:
-- p: [14, 17]
-  k: '&caps_word'
-  l: [default]
