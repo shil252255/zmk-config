@@ -44,7 +44,7 @@
                 , <&macro_tap &kp LSHFT>
                 , <&macro_release &kp LALT>
                 ;
-        }
+        };
     };
 };
 
