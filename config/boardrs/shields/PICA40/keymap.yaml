@@ -1,0 +1,175 @@
+# FILL IN below field with a value like {qmk_keyboard: ferris/sweep}
+# or {ortho_layout: {split: true, rows: 3, columns: 5, thumbs: 2}}
+# see https://github.com/caksoylar/keymap-drawer/blob/main/KEYMAP_SPEC.md#layout
+layout:
+  qmk_keyboard: corne_rotated
+  qmk_layout: LAYOUT_split_3x5_3
+layers:
+  default:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - LSHFT
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ESC
+  - {t: ESC, h: LGUI}
+  - func
+  - {t: ENTER, h: num}
+  - SPACE
+  - {t: BSPC, h: nav}
+  - RALT
+  nav:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LSHFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: LEFT, h: HOME}
+  - {t: DOWN, h: PG DN}
+  - {t: UP, h: PG UP}
+  - {t: RIGHT, h: END}
+  - ''
+  - ''
+  - LCTRL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  num:
+  - KP EQUAL
+  - '7'
+  - '8'
+  - '9'
+  - CALC
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - LSHFT
+  - KP MULTIPLY
+  - '4'
+  - '5'
+  - '6'
+  - KP PLUS
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ;
+  - ''''
+  - LCTRL
+  - KP DIVIDE
+  - '1'
+  - '2'
+  - '3'
+  - KP MINUS
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ESC
+  - ''
+  - ''
+  - {t: SPACE, type: held}
+  - ENTER
+  - BSPC
+  - RALT
+  sum: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
+    ENTER, BSPC, RALT]
+  func:
+  - AC VIEW TOGGLE
+  - ''
+  - ''
+  - AC NEXT KEYBOARD LAYOUT SELECT
+  - ''
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - ''
+  - ALT ERASE
+  - '&zed_em_kay'
+  - '&togl_lang'
+  - LANG1
+  - PSCRN
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ;
+  - ''''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ESC
+  - LGUI
+  - {t: nav, type: held}
+  - SPACE
+  - ENTER
+  - BSPC
+  - RALT
+  sys: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
+    ENTER, BSPC, RALT]
