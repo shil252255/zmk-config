@@ -31,19 +31,15 @@
             label = "TGL_LT";
         };
 
-        voa: vap {
+        voa: voa {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LALT &kp TAB>,
-                <&macro_release>,
-                <&kp TAB>,
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp TAB>,
                 <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "VAP";
+                <&macro_release &kp LALT>;
+            label = "VOA";
         };
 
         nvd: nvd {
