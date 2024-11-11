@@ -31,11 +31,15 @@
             label = "TGL_LT";
         };
 
-        voa: vap {
+        voa: voa {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(TAB))>;
-            label = "VAP";
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp TAB>,
+                <&macro_pause_for_release>,
+                <&macro_release &kp LALT>;
+            label = "VOA";
         };
 
         nvd: nvd {
@@ -94,10 +98,10 @@
 
         func_layer {
             bindings = <
-       &none  &pvd      &none     &nvd       &none        &kp Y      &kp U     &kp I      &kp O      &kp P
-&none  &none  &none     &none     &tgl_lt    &none        &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp SEMI  &kp SQT
-&none  &none  &kp LEFT  &voa      &kp RIGHT  &alt_tab     &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp ESC
-                        &kp LGUI  &mo 1      &kp SPACE    &kp ENTER  &kp BSPC  &kp RALT
+       &kp LC(X)  &pvd      &none     &kp LA(F4)  &none        &kp Y      &kp U     &kp I      &kp O      &kp P
+&none  &kp LC(C)  &pvd      &nvd      &tgl_lt     &none        &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp SEMI  &kp SQT
+&none  &kp LC(V)  &kp LEFT  &voa      &kp RIGHT   &alt_tab     &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp ESC
+                            &kp LGUI  &trans      &kp SPACE    &kp ENTER  &kp BSPC  &kp RALT
             >;
         };
 
