@@ -1,0 +1,134 @@
+layers:
+  default:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - TAB
+  - A
+  - S
+  - D
+  - {t: F, h: LSHFT}
+  - G
+  - H
+  - {t: J, h: RSHFT}
+  - K
+  - L
+  - ;
+  - ''''
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ESC
+  - {t: ESC, h: nav}
+  - {t: func, h: toggle}
+  - {t: ENTER, h: LALT}
+  - SPACE
+  - {t: BSPC, h: num}
+  - RALT
+  nav:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LSHFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: LEFT, h: HOME}
+  - {t: DOWN, h: PG DN}
+  - {t: UP, h: PG UP}
+  - {t: RIGHT, h: END}
+  - ''
+  - ''
+  - LCTRL
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  num:
+  - KP EQUAL
+  - '7'
+  - '8'
+  - '9'
+  - CALC
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - LSHFT
+  - KP MULTIPLY
+  - '4'
+  - '5'
+  - '6'
+  - KP PLUS
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ;
+  - ''''
+  - LCTRL
+  - KP DIVIDE
+  - '1'
+  - '2'
+  - '3'
+  - KP MINUS
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ESC
+  - ''
+  - ''
+  - SPACE
+  - ENTER
+  - {t: BSPC, type: held}
+  - RALT
+  sum: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
+    ENTER, BSPC, RALT]
+  func: [AC VIEW TOGGLE, '', '', '', '', Y, U, I, O, P, '', ALT ERASE, '&pvd', '&nvd', '&togl_lang', PSCRN, LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '&LEFT', '&voa',
+    '&RIGHT', '&alt_tab', N, M, ',', ., /, ESC, LGUI, nav, SPACE, ENTER, BSPC, RALT]
+  sys: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
+    ENTER, BSPC, RALT]
+combos:
+- p: [14, 17]
+  k: '&caps_word'
+  l: [default]
