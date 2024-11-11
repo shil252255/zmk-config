@@ -124,7 +124,7 @@ layers:
   - RALT
   sum: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
     ENTER, BSPC, RALT]
-  func: [AC VIEW TOGGLE, '', '', '', '', Y, U, I, O, P, '', ALT ERASE, '&pvd', '&nvd', '&togl_lang', PSCRN, LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '&LEFT', '&voa',
-    '&RIGHT', '&alt_tab', N, M, ',', ., /, ESC, LGUI, nav, SPACE, ENTER, BSPC, RALT]
+  func: ['', '&pvd', '', '&nvd', '', Y, U, I, O, P, '', '', '', '', '&tgl_lt', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', LEFT, '&voa', RIGHT, '&alt_tab', N, M,
+    ',', ., /, ESC, LGUI, nav, SPACE, ENTER, BSPC, RALT]
   sys: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
     ENTER, BSPC, RALT]
