@@ -10,14 +10,14 @@ layers:
   - I
   - O
   - P
-  - LSHFT
+  - TAB
   - A
   - S
   - D
-  - F
+  - {t: F, h: LSHFT}
   - G
   - H
-  - J
+  - {t: J, h: RSHFT}
   - K
   - L
   - ;
@@ -34,11 +34,11 @@ layers:
   - .
   - /
   - ESC
-  - {t: ESC, h: LGUI}
-  - func
-  - {t: ENTER, h: num}
+  - {t: ESC, h: nav}
+  - {t: func, h: toggle}
+  - {t: ENTER, h: LALT}
   - SPACE
-  - {t: BSPC, h: nav}
+  - {t: BSPC, h: num}
   - RALT
   nav:
   - ''
@@ -75,11 +75,11 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   num:
   - KP EQUAL
@@ -118,52 +118,17 @@ layers:
   - ESC
   - ''
   - ''
-  - {t: SPACE, type: held}
+  - SPACE
   - ENTER
-  - BSPC
+  - {t: BSPC, type: held}
   - RALT
   sum: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
     ENTER, BSPC, RALT]
-  func:
-  - AC VIEW TOGGLE
-  - ''
-  - ''
-  - AC NEXT KEYBOARD LAYOUT SELECT
-  - ''
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - ''
-  - ALT ERASE
-  - '&zed_em_kay'
-  - '&togl_lang'
-  - LANG1
-  - PSCRN
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - ;
-  - ''''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ESC
-  - LGUI
-  - {t: nav, type: held}
-  - SPACE
-  - ENTER
-  - BSPC
-  - RALT
+  func: [AC VIEW TOGGLE, '', '', '', '', Y, U, I, O, P, '', ALT ERASE, '&pvd', '&nvd', '&togl_lang', PSCRN, LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '&LEFT', '&voa',
+    '&RIGHT', '&alt_tab', N, M, ',', ., /, ESC, LGUI, nav, SPACE, ENTER, BSPC, RALT]
   sys: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
     ENTER, BSPC, RALT]
+combos:
+- p: [14, 17]
+  k: '&caps_word'
+  l: [default]
