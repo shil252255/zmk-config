@@ -44,9 +44,10 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-    }
-}
+    };
+};
 
+/{
 combos {
         compatible = "zmk,combos";
         combo_caps_word {
@@ -56,6 +57,7 @@ combos {
             layers = <0>;
         };
     };
+};
 
 
 /{
@@ -63,16 +65,12 @@ combos {
         nvd: next_virtual_desctop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <macro_tap &kp LGUI &kp LCTRL &kp RIGHT>
-                ;
+            bindings = <macro_tap &kp LGUI &kp LCTRL &kp RIGHT>;
         };
         pvd: prev_virtual_desctop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <macro_tap &kp LGUI &kp LCTRL &kp LEFT>
-                ;
+            bindings = <macro_tap &kp LGUI &kp LCTRL &kp LEFT>;
         };
 
         voa: view_open_apps {
