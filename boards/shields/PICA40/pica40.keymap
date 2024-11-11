@@ -24,7 +24,7 @@
     tapping-term-ms = <150>;
 };
 
-/ {
+/{
     behaviors {
         hsl: homerow_shift_l {
             compatible = "zmk,behavior-hold-tap";
@@ -45,22 +45,22 @@
             bindings = <&kp>, <&kp>;
         };
     };
-};
 
-/{
-combos {
-        compatible = "zmk,combos";
-        combo_caps_word {
-            timeout-ms = <50>;
-            key-positions = <14 17>;
-            bindings = <&caps_word>;
-            layers = <0>;
+
+
+    combos {
+            compatible = "zmk,combos";
+            combo_caps_word {
+                timeout-ms = <50>;
+                key-positions = <14 17>;
+                bindings = <&caps_word>;
+                layers = <0>;
+            };
         };
-    };
-};
 
 
-/{
+
+
     macros {
         nvd: next_virtual_desctop {
             compatible = "zmk,behavior-macro";
@@ -99,11 +99,11 @@ combos {
                 ;
         };
     };
-};
 
 
 
-/ {
+
+
     keymap {
         compatible = "zmk,keymap";
 
