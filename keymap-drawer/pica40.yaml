@@ -1,3 +1,6 @@
+layout:
+  qmk_keyboard: pica40
+  qmk_layout: pica40.json
 layers:
   default:
   - Q
