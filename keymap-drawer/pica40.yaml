@@ -118,7 +118,7 @@ layers:
   - ESC
   - ''
   - ''
-  - SPACE
+  - ENTER
   - ENTER
   - {t: BSPC, type: held}
   - RALT
