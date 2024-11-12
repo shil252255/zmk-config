@@ -39,7 +39,6 @@
                 <&macro_tap &kp TAB>,
                 <&macro_pause_for_release>,
                 <&macro_release &kp LALT>;
-
             label = "VOA";
         };
 
