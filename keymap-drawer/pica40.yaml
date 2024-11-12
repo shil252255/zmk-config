@@ -124,7 +124,46 @@ layers:
   - RALT
   sum: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
     ENTER, BSPC, RALT]
-  func: ['', '&pvd', '', '&nvd', '', Y, U, I, O, P, '', '', '', '', '&tgl_lt', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', LEFT, '&voa', RIGHT, '&alt_tab', N, M,
-    ',', ., /, ESC, LGUI, nav, SPACE, ENTER, BSPC, RALT]
+  func:
+  - Ctl+ X
+  - '&pvd'
+  - ''
+  - Alt+ F4
+  - ''
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - ''
+  - Ctl+ C
+  - '&pvd'
+  - '&nvd'
+  - '&tgl_lt'
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ;
+  - ''''
+  - ''
+  - Ctl+ V
+  - LEFT
+  - '&voa'
+  - RIGHT
+  - '&alt_tab'
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ESC
+  - LGUI
+  - {t: ▽, type: trans}
+  - SPACE
+  - ENTER
+  - BSPC
+  - RALT
   sys: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
     ENTER, BSPC, RALT]
