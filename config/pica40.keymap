@@ -102,10 +102,10 @@
 
         func_layer {
             bindings = <
-           &kp LC(X)  &pvd      &none     &kp LA(F4)  &none        &kp Y      &kp U     &kp I      &kp O      &kp P
-&kp LSHFT  &kp LC(C)  &pvd      &nvd      &tgl_lt     &none        &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp SEMI  &kp SQT
-&kp LCTRL  &kp LC(V)  &kp LEFT  &voa      &kp RIGHT   &alt_tab     &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp ESC
-                                &kp LGUI  &trans      &kp SPACE    &kp ENTER  &kp BSPC  &kp RALT
+           &kp LC(X)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(F4)  &kp LA(F4)    &kp Y      &kp U     &kp I      &kp O      &kp P
+&kp LSHFT  &kp LC(C)  &pvd             &nvd         &tgl_lt     &none         &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp SEMI  &kp SQT
+&kp LCTRL  &kp LC(V)  &kp LEFT         &voa         &kp RIGHT   &alt_tab      &kp N      &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp ESC
+                                       &kp LGUI     &trans      &kp SPACE     &kp ENTER  &kp BSPC  &kp RALT
             >;
         };
 
