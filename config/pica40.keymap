@@ -80,6 +80,11 @@
             slow-release;
             layers = <6 5 4 0 1 2 3>;
         };
+
+        cw {
+            bindings = <&caps_word>;
+            key-positions = <14 17>;
+        };
     };
 
     keymap {
