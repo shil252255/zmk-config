@@ -68,6 +68,18 @@
             bindings = <&kp LG(SPACE)>;
             key-positions = <14 15>;
         };
+
+        game {
+            bindings = <&to 6>;
+            key-positions = <2 7>;
+        };
+
+        def {
+            bindings = <&to 0>;
+            key-positions = <37 36>;
+            slow-release;
+            layers = <6 5 4 0 1 2 3>;
+        };
     };
 
     keymap {
