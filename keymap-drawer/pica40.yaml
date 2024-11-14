@@ -126,16 +126,16 @@ layers:
     ENTER, BSPC, RALT]
   func:
   - Ctl+ X
-  - '&pvd'
-  - ''
+  - Ctl+Sft+ TAB
+  - Ctl+ TAB
+  - Ctl+ F4
   - Alt+ F4
-  - ''
   - Y
   - U
   - I
   - O
   - P
-  - ''
+  - LSHFT
   - Ctl+ C
   - '&pvd'
   - '&nvd'
@@ -147,7 +147,7 @@ layers:
   - RIGHT
   - ;
   - ''''
-  - ''
+  - LCTRL
   - Ctl+ V
   - LEFT
   - '&voa'
