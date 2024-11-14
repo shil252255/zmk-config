@@ -10,14 +10,14 @@ layers:
   - I
   - O
   - P
-  - TAB
+  - LEFT SHIFT
   - A
   - S
   - D
-  - F
+  - {t: F, h: LEFT SHIFT}
   - G
   - H
-  - J
+  - {t: J, h: RIGHT SHIFT}
   - K
   - L
   - ;
@@ -33,9 +33,9 @@ layers:
   - ','
   - .
   - /
-  - ESC
+  - '['
   - {t: ESC, h: nav}
-  - {t: func, h: toggle}
+  - {t: TAB, h: func}
   - {t: ENTER, h: LALT}
   - SPACE
   - {t: BSPC, h: num}
@@ -160,10 +160,22 @@ layers:
   - /
   - ESC
   - LGUI
-  - {t: ▽, type: trans}
+  - {type: held}
   - SPACE
   - ENTER
   - BSPC
   - RALT
   sys: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
     ENTER, BSPC, RALT]
+  GAME: [TAB, Q, W, E, R, '', '', '', '', '', ESC, LEFT SHIFT, A, S, D, F, '', '', '', '', '', '', T, LCTRL, Z, X, C, V, '', '', '', '', '', '', '`', LEFT ALT, SPACE,
+    '', '', '']
+combos:
+- p: [14, 15]
+  k: Gui+ SPACE
+- p: [2, 7]
+  k: {t: GAME, h: toggle}
+- p: [37, 36]
+  k: {t: default, h: toggle}
+  l: [GAME, sys, func, default, nav, num, sum]
+- p: [14, 17]
+  k: '&caps_word'
