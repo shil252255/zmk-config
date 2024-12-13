@@ -33,30 +33,30 @@ layers:
   - ','
   - .
   - /
-  - '['
+  - {t: '[', h: RCTRL}
   - {t: ESC, h: nav}
   - {t: TAB, h: func}
-  - {t: ENTER, h: LALT}
+  - ENTER
   - SPACE
   - {t: BSPC, h: num}
   - RALT
   nav:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - '-'
   - ''
   - ''
   - ''
   - ''
   - ''
   - LSHFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - ESC
+  - '4'
+  - '5'
+  - '6'
+  - '='
   - {t: LEFT, h: HOME}
   - {t: DOWN, h: PG DN}
   - {t: UP, h: PG UP}
@@ -64,11 +64,11 @@ layers:
   - ''
   - ''
   - LCTRL
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - Ctl+ Z
+  - '1'
+  - '2'
+  - '3'
+  - '0'
   - ''
   - ''
   - ''
@@ -82,46 +82,46 @@ layers:
   - ''
   - ''
   num:
-  - KP EQUAL
-  - '7'
-  - '8'
-  - '9'
-  - CALC
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - LSHFT
-  - KP MULTIPLY
-  - '4'
-  - '5'
-  - '6'
-  - KP PLUS
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - ;
-  - ''''
-  - LCTRL
-  - KP DIVIDE
   - '1'
   - '2'
   - '3'
-  - KP MINUS
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ESC
-  - ''
-  - ''
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '`'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - {t: LEFT, h: HOME}
+  - {t: DOWN, h: PAGE DOWN}
+  - {t: UP, h: PAGE UP}
+  - {t: RIGHT, h: END}
+  - '='
+  - '-'
+  - LCTRL
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - '{'
+  - '['
+  - ']'
+  - '}'
+  - _
+  - \
+  - DEL
+  - LEFT SHIFT
   - ENTER
-  - ENTER
-  - {t: BSPC, type: held}
-  - RALT
+  - ''
+  - {type: held}
+  - ''
   sum: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
     ENTER, BSPC, RALT]
   func:
@@ -167,15 +167,16 @@ layers:
   - RALT
   sys: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
     ENTER, BSPC, RALT]
-  GAME: [TAB, Q, W, E, R, '', '', '', '', '', ESC, LEFT SHIFT, A, S, D, F, '', '', '', '', '', '', T, LCTRL, Z, X, C, V, '', '', '', '', '', '', '`', LEFT ALT, SPACE,
-    '', '', '']
+  gm: [TAB, Q, W, E, R, Y, U, I, O, P, ESC, LEFT SHIFT, A, S, D, F, H, J, K, L, ;, '', T, LCTRL, Z, X, C, V, N, M, ',', ., /, '', '`', LEFT ALT, SPACE, '', '', '']
 combos:
 - p: [14, 15]
   k: Gui+ SPACE
 - p: [2, 7]
-  k: {t: GAME, h: toggle}
+  k: {t: gm, h: toggle}
 - p: [37, 36]
   k: {t: default, h: toggle}
-  l: [GAME, sys, func, default, nav, num, sum]
+  l: [gm, sys, func, default, nav, num, sum]
 - p: [14, 17]
   k: '&caps_word'
+- p: [13, 18]
+  k: {t: nav, h: toggle}
