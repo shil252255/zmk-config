@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: pica40}
 layers:
   default:
   - Q
@@ -10,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - LEFT SHIFT
+  - ESCAPE
   - A
   - S
   - D
@@ -34,9 +35,9 @@ layers:
   - .
   - /
   - {t: '[', h: RCTRL}
-  - {t: ESC, h: nav}
+  - LEFT ALT
   - {t: TAB, h: func}
-  - ENTER
+  - {t: ENTER, h: '9'}
   - SPACE
   - {t: BSPC, h: num}
   - RALT
@@ -51,8 +52,8 @@ layers:
   - ''
   - ''
   - ''
-  - LSHFT
   - ESC
+  - LEFT SHIFT
   - '4'
   - '5'
   - '6'
@@ -64,7 +65,7 @@ layers:
   - ''
   - ''
   - LCTRL
-  - Ctl+ Z
+  - .
   - '1'
   - '2'
   - '3'
@@ -75,9 +76,9 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
-  - ''
-  - ''
+  - DEL
+  - BACKSPACE
+  - {t: ENTER, h: '9'}
   - ''
   - ''
   - ''
@@ -118,12 +119,51 @@ layers:
   - \
   - DEL
   - LEFT SHIFT
-  - ENTER
+  - {t: ENTER, h: '9'}
   - ''
   - {type: held}
   - ''
-  sum: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
-    ENTER, BSPC, RALT]
+  sum:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - ''
+  - F12
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ;
+  - F11
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ESC
+  - LGUI
+  - nav
+  - {t: ▽, type: trans}
+  - ENTER
+  - BSPC
+  - RALT
   func:
   - Ctl+ X
   - Ctl+Sft+ TAB
@@ -161,13 +201,175 @@ layers:
   - ESC
   - LGUI
   - {type: held}
-  - SPACE
+  - {t: ▽, type: trans}
   - ENTER
   - BSPC
   - RALT
-  sys: ['', '', '', '', '', Y, U, I, O, P, '', '', '', '', '', '', LEFT, DOWN, UP, RIGHT, ;, '''', '', '', '', '', '', '', N, M, ',', ., /, ESC, LGUI, nav, SPACE,
-    ENTER, BSPC, RALT]
+  sys:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ;
+  - ''''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ESC
+  - LGUI
+  - nav
+  - {t: ▽, type: trans}
+  - ENTER
+  - BSPC
+  - RALT
   gm: [TAB, Q, W, E, R, Y, U, I, O, P, ESC, LEFT SHIFT, A, S, D, F, H, J, K, L, ;, '', T, LCTRL, Z, X, C, V, N, M, ',', ., /, '', '`', LEFT ALT, SPACE, '', '', '']
+  '7':
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '8':
+  - ''
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_UP'
+  - {t: ▽, type: trans}
+  - '&msc SCRL_UP'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB3'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_DOWN'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_RIGHT'
+  - '&msc SCRL_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '9'
+  - '&mkp MB2'
+  - '&mkp MB1'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '9':
+  - {t: default, h: toggle}
+  - {t: nav, h: toggle}
+  - {t: num, h: toggle}
+  - {t: sum, h: toggle}
+  - {t: func, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: sys, h: toggle}
+  - {t: gm, h: toggle}
+  - {t: '7', h: toggle}
+  - {t: '8', h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [14, 15]
   k: Gui+ SPACE
