@@ -92,6 +92,11 @@
             bindings = <&to 1>;
             key-positions = <13 18>;
         };
+
+        std_unlock {
+            bindings = <&studio_unlock>;
+            key-positions = <11 12 13 14>;
+        };
     };
 
     keymap {
