@@ -1,5 +1,9 @@
 #include "pica40.dtsi"
 
+&chosen {
+    zmk,physical-layout = &default_layout;
+};
+
 &kscan0 {
     col-gpios
         = <&xiao_d 0 GPIO_ACTIVE_HIGH>
