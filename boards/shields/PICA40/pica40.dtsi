@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 / {
     kscan0: kscan0 {
@@ -35,50 +36,45 @@
         transform = <&default_transform>;
         kscan = <&kscan0>;
 
-        keys {
-            compatible = "zmk,keys";
-
-            key-0 { zmk,position-x = <1>; zmk,position-y = <0>; };
-            key-1 { zmk,position-x = <2>; zmk,position-y = <0>; };
-            key-2 { zmk,position-x = <3>; zmk,position-y = <0>; };
-            key-3 { zmk,position-x = <4>; zmk,position-y = <0>; };
-            key-4 { zmk,position-x = <5>; zmk,position-y = <0>; };
-            key-5 { zmk,position-x = <9>; zmk,position-y = <0>; };
-            key-6 { zmk,position-x = <10>; zmk,position-y = <0>; };
-            key-7 { zmk,position-x = <11>; zmk,position-y = <0>; };
-            key-8 { zmk,position-x = <12>; zmk,position-y = <0>; };
-            key-9 { zmk,position-x = <13>; zmk,position-y = <0>; };
-            key-10 { zmk,position-x = <0>; zmk,position-y = <1>; };
-            key-11 { zmk,position-x = <1>; zmk,position-y = <1>; };
-            key-12 { zmk,position-x = <2>; zmk,position-y = <1>; };
-            key-13 { zmk,position-x = <3>; zmk,position-y = <1>; };
-            key-14 { zmk,position-x = <4>; zmk,position-y = <1>; };
-            key-15 { zmk,position-x = <5>; zmk,position-y = <1>; };
-            key-16 { zmk,position-x = <9>; zmk,position-y = <1>; };
-            key-17 { zmk,position-x = <10>; zmk,position-y = <1>; };
-            key-18 { zmk,position-x = <11>; zmk,position-y = <1>; };
-            key-19 { zmk,position-x = <12>; zmk,position-y = <1>; };
-            key-20 { zmk,position-x = <13>; zmk,position-y = <1>; };
-            key-21 { zmk,position-x = <14>; zmk,position-y = <1>; };
-            key-22 { zmk,position-x = <0>; zmk,position-y = <2>; };
-            key-23 { zmk,position-x = <1>; zmk,position-y = <2>; };
-            key-24 { zmk,position-x = <2>; zmk,position-y = <2>; };
-            key-25 { zmk,position-x = <3>; zmk,position-y = <2>; };
-            key-26 { zmk,position-x = <4>; zmk,position-y = <2>; };
-            key-27 { zmk,position-x = <5>; zmk,position-y = <2>; };
-            key-28 { zmk,position-x = <9>; zmk,position-y = <2>; };
-            key-29 { zmk,position-x = <10>; zmk,position-y = <2>; };
-            key-30 { zmk,position-x = <11>; zmk,position-y = <2>; };
-            key-31 { zmk,position-x = <12>; zmk,position-y = <2>; };
-            key-32 { zmk,position-x = <13>; zmk,position-y = <2>; };
-            key-33 { zmk,position-x = <14>; zmk,position-y = <2>; };
-            key-34 { zmk,position-x = <3>; zmk,position-y = <3>; };
-            key-35 { zmk,position-x = <4>; zmk,position-y = <3>; };
-            key-36 { zmk,position-x = <5>; zmk,position-y = <3>; };
-            key-37 { zmk,position-x = <10>; zmk,position-y = <3>; };
-            key-38 { zmk,position-x = <11>; zmk,position-y = <3>; };
-            key-39 { zmk,position-x = <12>; zmk,position-y = <3>; };
-        };
+       keys
+            = <&key_physical_attrs 100 100 100 0 0 0 0>
+            , <&key_physical_attrs 100 100 200 0 0 0 0>
+            , <&key_physical_attrs 100 100 300 0 0 0 0>
+            , <&key_physical_attrs 100 100 400 0 0 0 0>
+            , <&key_physical_attrs 100 100 500 0 0 0 0>
+            , <&key_physical_attrs 100 100 900 0 0 0 0>
+            , <&key_physical_attrs 100 100 1000 0 0 0 0>
+            , <&key_physical_attrs 100 100 1100 0 0 0 0>
+            , <&key_physical_attrs 100 100 1200 0 0 0 0>
+            , <&key_physical_attrs 100 100 1300 0 0 0 0>
+            , <&key_physical_attrs 100 100 0 100 0 0 0>
+            , <&key_physical_attrs 100 100 100 100 0 0 0>
+            , <&key_physical_attrs 100 100 200 100 0 0 0>
+            , <&key_physical_attrs 100 100 300 100 0 0 0>
+            , <&key_physical_attrs 100 100 400 100 0 0 0>
+            , <&key_physical_attrs 100 100 500 100 0 0 0>
+            , <&key_physical_attrs 100 100 900 100 0 0 0>
+            , <&key_physical_attrs 100 100 1000 100 0 0 0>
+            , <&key_physical_attrs 100 100 1100 100 0 0 0>
+            , <&key_physical_attrs 100 100 1200 100 0 0 0>
+            , <&key_physical_attrs 100 100 1300 100 0 0 0>
+            , <&key_physical_attrs 100 100 0 200 0 0 0>
+            , <&key_physical_attrs 100 100 100 200 0 0 0>
+            , <&key_physical_attrs 100 100 200 200 0 0 0>
+            , <&key_physical_attrs 100 100 300 200 0 0 0>
+            , <&key_physical_attrs 100 100 400 200 0 0 0>
+            , <&key_physical_attrs 100 100 500 200 0 0 0>
+            , <&key_physical_attrs 100 100 900 200 0 0 0>
+            , <&key_physical_attrs 100 100 1000 200 0 0 0>
+            , <&key_physical_attrs 100 100 1100 200 0 0 0>
+            , <&key_physical_attrs 100 100 1200 200 0 0 0>
+            , <&key_physical_attrs 100 100 1300 200 0 0 0>
+            , <&key_physical_attrs 100 100 300 300 0 0 0>
+            , <&key_physical_attrs 100 100 400 300 0 0 0>
+            , <&key_physical_attrs 100 100 500 300 0 0 0>
+            , <&key_physical_attrs 100 100 1000 300 0 0 0>
+            , <&key_physical_attrs 100 100 1100 300 0 0 0>
+            , <&key_physical_attrs 100 100 1200 300 0 0 0>;
     };
 };
 
