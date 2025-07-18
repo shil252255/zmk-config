@@ -15,3 +15,7 @@
         zmk,physical-layout = &default_layout;
     };
 };
+
+&left_encoder {
+    status = "okay";
+};
