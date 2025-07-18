@@ -73,12 +73,12 @@
 
         game {
             bindings = <&to 6>;
-            key-positions = <2 7>;
+            key-positions = <2 1>;
         };
 
         def {
             bindings = <&to 0>;
-            key-positions = <37 36>;
+            key-positions = <13 14>;
             slow-release;
             layers = <6 5 4 0 1 2 3>;
         };
@@ -90,7 +90,7 @@
 
         sw {
             bindings = <&to 1>;
-            key-positions = <13 18>;
+            key-positions = <13 12>;
         };
 
         std_unlock {
@@ -109,6 +109,7 @@
 &kp LCTRL   &kp Z  &kp X  &kp C         &kp V             &kp B          &kp N      &kp M              &kp COMMA  &kp DOT  &kp FSLH  &mt RCTRL LEFT_BRACKET
                           &kp LEFT_ALT  &lt FUNC TAB      &lt 9 ENTER    &kp SPACE  &lt NUM BSPC       &kp RALT
             >;
+
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LC(RIGHT) LC(LEFT)>;
         };
 
