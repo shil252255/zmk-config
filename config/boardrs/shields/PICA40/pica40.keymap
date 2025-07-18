@@ -25,6 +25,16 @@
 };
 
 /{
+    encoders {
+        compatible = "zmk,encoders";
+        left_encoder: encoder_left {
+            bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+        right_encoder: encoder_right {
+            bindings = <&inc_dec_kp D S>;
+        };
+    };
+
     macros {
         nvd: next_virtual_desctop {
             compatible = "zmk,behavior-macro";

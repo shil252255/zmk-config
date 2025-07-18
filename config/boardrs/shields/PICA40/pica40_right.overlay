@@ -13,3 +13,7 @@
         , <&xiao_d 0 GPIO_ACTIVE_HIGH>
         ;
 };
+
+&right_encoder {
+    bindings = <&inc_dec_kp D S>;
+};
