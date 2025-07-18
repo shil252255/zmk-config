@@ -24,22 +24,10 @@
             b-gpios = <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
             resolution = <4>;
         };
-        right_encoder: encoder_right {
-            compatible = "alps,ec11";
-            a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-            b-gpios = <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-            resolution = <4>;
-        };
     };
     sensors {
-    compatible = "my,sensors-config";
-    left_config {
-        triggers-per-rotation = <18>;
-    };
-
-    right_config {
-        triggers-per-rotation = <24>;
-    };
+    compatible = "zmk,keymap-sensors";
+    sensors = <&left_encoder>;
 };
 };
 
