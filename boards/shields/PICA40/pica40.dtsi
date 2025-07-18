@@ -31,7 +31,8 @@
             resolution = <4>;
         };
     };
-    &sensors {
+    sensors {
+    compatible = "my,sensors-config";
     left_config {
         triggers-per-rotation = <18>;
     };
