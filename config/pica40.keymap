@@ -115,7 +115,9 @@
                           &kp LEFT_ALT  &lt FUNC TAB      &lt 9 ENTER    &kp SPACE  &lt NUM BSPC       &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LC(RIGHT) LC(LEFT)>;
+            sensor-bindings =
+                <&inc_dec_kp D S>,
+                <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
         };
 
         nav_layer {
