@@ -88,6 +88,7 @@
             &kp LCTRL   &kp Z       &kp X       &kp C           &kp V               &kp B                &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp ESC 
                                                 &lt 1 ESC       &tog FUNC           &mt LALT ENTER            &kp SPACE   &lt NUM BSPC    &kp RALT                    
                         >;
+                        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LC(RIGHT) LC(LEFT)>;
         };
 
         nav_layer { 
