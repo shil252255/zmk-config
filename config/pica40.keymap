@@ -115,9 +115,6 @@
                                                    &kp DEL             &lt 2 TAB         &lt 4 ENTER    &kp SPACE  &lt 2 BSPC         &kp RALT
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LC(RIGHT) LC(LEFT)>;
         };
 
         sw_layer {
