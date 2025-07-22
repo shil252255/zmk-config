@@ -82,6 +82,11 @@
             , <&key_physical_attrs 100 100 1052 312 0 0 0>;
     };
 };
+&usbd {
+    cdc_acm0: cdc_acm0 {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};
 
 / {
     chosen {
