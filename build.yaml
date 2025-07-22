@@ -26,3 +26,9 @@ include:
     shield: pica40_right
   - board: seeeduino_xiao_ble
     shield: settings_reset
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
