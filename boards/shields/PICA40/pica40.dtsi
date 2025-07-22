@@ -86,5 +86,6 @@
 / {
     chosen {
         zmk,physical-layout = &default_layout;
+        zephyr,console = &cdc_acm0;
     };
 };
