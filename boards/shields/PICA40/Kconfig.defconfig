@@ -10,7 +10,7 @@ endif
 
 config INPUT_LOG_LEVEL
     int "Input driver log level"
-    default 3
+    default 4
 
 if SHIELD_PICA40_LEFT || SHIELD_PICA40_RIGHT
 
