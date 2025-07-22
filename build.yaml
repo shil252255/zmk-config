@@ -21,6 +21,6 @@ include:
   - board: seeeduino_xiao_ble
     shield: pica40_left
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_USB_LOGGING=y -DCONFIG_PAW3610=y
-    artifact-name: pica40_left_with_paw3610
+    cmake-args: -DCONFIG_ZMK_USB_LOGGING=y -DCONFIG_PMW3610=y
+    artifact-name: pica40_left_with_pmw3610
 
