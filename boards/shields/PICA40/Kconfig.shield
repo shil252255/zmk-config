@@ -1,5 +1,2 @@
 config SHIELD_PICA40_LEFT 
     def_bool $(shields_list_contains,pica40_left)
-
-config SHIELD_PICA40_RIGHT
-    def_bool $(shields_list_contains,pica40_right)
