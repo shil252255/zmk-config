@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: trentrand
-      url-base: https://github.com/trentrand
+    - name: KOHSUK
+      url-base: https://github.com/KOHSUK
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-pmw3360-driver
-      remote: trentrand
-      revision: main
+      remote: KOHSUK
+      revision: pmw3360
   self:
     path: config
