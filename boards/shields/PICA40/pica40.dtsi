@@ -9,9 +9,7 @@
 
         row-gpios
             = <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            ;
     };
 };
 
@@ -21,10 +19,7 @@
         columns = <10>;
         rows = <4>;
         map = <
-                    RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4)  RC(0,5) RC(0,6) RC(0,7) RC(0,8) RC(0,9) 
-            RC(3,0) RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4)  RC(1,5) RC(1,6) RC(1,7) RC(1,8) RC(1,9) RC(3,9)
-            RC(3,1) RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(3,8) 
-                                    RC(3,2) RC(3,3) RC(3,4)  RC(3,5) RC(3,6) RC(3,7)
+                    RC(0,0) 
         >;
     };
 };
@@ -35,51 +30,6 @@
         display-name = "Default Layout";
         transform = <&default_transform>;
         kscan = <&kscan0>;
-
-       keys
-           = <&key_physical_attrs 100 100 100 77 (-500) 100 300>
-            , <&key_physical_attrs 100 100 200 12 0 0 0>
-            , <&key_physical_attrs 100 100 300 0 0 0 0>
-            , <&key_physical_attrs 100 100 400 12 0 0 0>
-            , <&key_physical_attrs 100 100 500 25 0 0 0>
-            , <&key_physical_attrs 100 100 900 25 0 0 0>
-            , <&key_physical_attrs 100 100 1000 12 0 0 0>
-            , <&key_physical_attrs 100 100 1100 0 0 0 0>
-            , <&key_physical_attrs 100 100 1200 12 0 0 0>
-            , <&key_physical_attrs 100 100 1300 77 500 1400 300>
-
-            , <&key_physical_attrs 100 100 0 152 (-500) 100 300>
-            , <&key_physical_attrs 100 100 100 177 (-500) 100 300>
-            , <&key_physical_attrs 100 100 200 112 0 0 0>
-            , <&key_physical_attrs 100 100 300 100 0 0 0>
-            , <&key_physical_attrs 100 100 400 112 0 0 0>
-            , <&key_physical_attrs 100 100 500 125 0 0 0>
-            , <&key_physical_attrs 100 100 900 125 0 0 0>
-            , <&key_physical_attrs 100 100 1000 112 0 0 0>
-            , <&key_physical_attrs 100 100 1100 100 0 0 0>
-            , <&key_physical_attrs 100 100 1200 112 0 0 0>
-            , <&key_physical_attrs 100 100 1300 177 500 1400 300>
-            , <&key_physical_attrs 100 100 1400 152 500 1400 300>
-
-            , <&key_physical_attrs 100 100 0 252 (-500) 100 300>
-            , <&key_physical_attrs 100 100 100 277 (-500) 100 300>
-            , <&key_physical_attrs 100 100 200 212 0 0 0>
-            , <&key_physical_attrs 100 100 300 200 0 0 0>
-            , <&key_physical_attrs 100 100 400 212 0 0 0>
-            , <&key_physical_attrs 100 100 500 225 0 0 0>
-            , <&key_physical_attrs 100 100 900 225 0 0 0>
-            , <&key_physical_attrs 100 100 1000 212 0 0 0>
-            , <&key_physical_attrs 100 100 1100 200 0 0 0>
-            , <&key_physical_attrs 100 100 1200 212 0 0 0>
-            , <&key_physical_attrs 100 100 1300 277 500 1400 300>
-            , <&key_physical_attrs 100 100 1400 252 500 1400 300>
-
-            , <&key_physical_attrs 100 100 348 312 0 0 0>
-            , <&key_physical_attrs 100 100 348 312 1500 398 789>
-            , <&key_physical_attrs 100 100 348 290 3000 398 789>
-            , <&key_physical_attrs 100 100 1052 290 (-3000) 1102 789>
-            , <&key_physical_attrs 100 100 1052 312 (-1500) 1102 789>
-            , <&key_physical_attrs 100 100 1052 312 0 0 0>;
     };
 };
 &usbd {
