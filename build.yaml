@@ -20,5 +20,6 @@
 include:
   - board: seeeduino_xiao_ble
     shield: pica40_left
+    snippet: zmk-usb-logging
     artifact-name: pica40_left_with_pmw3610
 
