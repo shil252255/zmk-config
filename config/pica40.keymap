@@ -12,11 +12,7 @@
 #define KEYS_R 5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33  // right-hand keys
 #define THUMBS 34 35 36 37 38 39
 #define QWERTY 0
-#define NAV 1
-#define NUM 2
-#define SYM 3
-#define FUNC 4
-#define SYS 5
+
 
 / {
     
@@ -24,13 +20,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = <
-               &kp Q               &kp W           &mt LEFT_CONTROL E  &kp R             &kp T          &kp Y      &kp U              &mt RIGHT_CONTROL I  &kp O            &kp P
-&kp ESCAPE     &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D      &mt LEFT_SHIFT F  &kp G          &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_WIN K      &mt RIGHT_ALT L  &mt RIGHT_CONTROL SEMICOLON  &kp SQT
-&kp LS(LCTRL)  &kp Z               &kp X           &kp C               &kp V             &kp B          &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH                     &mt RCTRL LEFT_BRACKET
-                                                   &kp DEL             &lt 2 TAB         &lt 4 ENTER    &kp SPACE  &lt 2 BSPC         &kp RALT
-            >;
-
+            bindings = < &kp Q  >;
         };
 
         
